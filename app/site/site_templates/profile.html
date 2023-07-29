@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+<section class="main">
+    <!-- <div>
+        <img src="static/images/jonatan-pie-h8nxGssjQXs-unsplash.jpg" alt="Photo by Jonatan Pie on Unsplash" class="index-bg">
+    </div>     -->
+</section>
+    <section class="text-center text-light">
+    <div class="container p-3">
+        <div class="row"><br>
+            <h1 class="main-profile-text">You have successfully signed in, {{ current_user.email}}
+            </h1>
+            <h3 class="p-3">Here are your profile details</h3>
+            <ul class="list-group">
+                <li class="list-group-item">Email: {{ current_user.email }}</li>
+                <li class="list-group-item">Token: {{ current_user.token }} </li> 
+            </ul>
+        </div>
+    </div>
+    </section>
+
+    <footer class="fixed-bottom">
+        <div class="copyright-profile">
+            <p class="foot-text">&copy; Breanne Bryan 2023</p>
+        </div> 
+    
+    </footer>
+{% endblock %}
